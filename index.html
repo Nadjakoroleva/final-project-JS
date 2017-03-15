@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Базовый JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="sticks">
+        <div class="sticks-item">Количество кликов на странице: <span>0</span></div>
+        <div class="sticks-item">Поизиция курсора на экране: <span>0x0</span></div>
+        <div class="sticks-item">Последняя нажатая клавиша на клавиатуре: <span>-</span></div>
+      </div>
+
+      <header class="header">
+        <h1 data-text='JS' data-name='title' data-tag-name='h1'>Базовый JavaScript</h1>
+      </header>
+
+      <nav class="nav">
+        <a href="https://moscoding.ru" class="active">Табы</a>
+        <a href="#text">Тексты</a>
+        <a href="#form">Форма</a>
+        <a href="#map">Карта</a>
+        <a href="#accordeon">Аккордеон</a>
+        <a href="#modal">Модалка</a>
+        <a href="#edit">Редактор</a>
+      </nav>
+
+      <div class="content">
+        <button class="btn  btn--big">Большая магическая кнопка</button>
+
+        <hr>
+
+        <section id="tabs">
+          <h2>Табы</h2>
+          <div class="tab-container">
+            <div class="tab-controls">
+              <button type="button" class="tab-control tab-control--active" data-tab='tab-1'>Вкладка</button>
+              <button type="button" class="tab-control" data-tab='tab-2'>Другая вкладка</button>
+              <button type="button" class="tab-control" data-tab='tab-3'>Вообще другая вкладка</button>
+            </div>
+            <div class="tab-contents">
+              <div class="tab-content tab-1 tab-content--active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ratione voluptates saepe, harum neque adipisci odit doloremque, tempora, eum quaerat repudiandae ullam quidem recusandae molestias nam laborum error omnis ipsa!</div>
+              <div class="tab-content tab-2">Таким образом постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Идейные соображения высшего порядка, а также рамки и место обучения кадров представляет собой интересный эксперимент проверки систем массового участия.</div>
+              <div class="tab-content tab-3">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Таким образом рамки и место обучения кадров представляет собой интересный эксперимент проверки новых предложений. Равным образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке соответствующий условий активизации.</div>
+            </div>
+          </div>
+        </section>
+
+
+        <hr>
+
+        <section id="text">
+          <h2>Праграфы</h2>
+          <div class="row">
+            <div class="col-xs-6">
+              <p>Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации соответствующий условий активизации. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных условий.</p>
+            </div>
+            <div class="col-xs-6">
+              <p>Таким образом начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки модели развития. Таким образом новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации. Повседневная практика показывает, что начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации.</p>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="form">
+          <h2>Форма</h2>
+          <div class="alert alert--success">
+            Всё отлично!
+            <button type="button" class="btn">закрыть</button>
+          </div>
+          <div class="alert alert--danger">
+            Нет всё плохо, но я в тебя верю.
+            <button type="button" class="btn">закрыть</button>
+          </div>
+          <form action="/action" method="GET">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name">
+            </div>
+            <div class="form-group">
+              <label for="tel">Номер телефона: +7..</label>
+              <input type="text" id="tel">
+            </div>
+            <div class="form-group">
+              <label for="mail">E-mail:</label>
+              <input type="text" id="mail">
+            </div>
+            <div class="form-group">
+              <label for="textarea">Как дела вообще?</label>
+              <textarea rows="4" id="textarea"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn">Отправь же меня</button>
+            </div>
+          </form>
+        </section>
+
+        <hr>
+
+        <section id="map">
+          <h2>Карта</h2>
+
+          <div class="map" id="map">Я хочу чтобы тут была карта!</div>
+        </section>
+
+        <hr>
+
+        <section id="accordeon">
+          <h2>Аккордеон</h2>
+          <div class="accordeon">
+            <div class="accordeon-item accordeon-item--active">
+              <div class="accordeon-head">
+                <h3>Я первая вкладка аккордеона</h3>
+              </div>
+              <div class="accordeon-content">
+                <p>Идейные соображения высшего порядка, а также сложившаяся структура организации позволяет выполнять важные задания по разработке соответствующий условий активизации. С другой стороны консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+              </div>
+            </div>
+            <div class="accordeon-item">
+              <div class="accordeon-head">
+                <h3>Я вторая вкладка аккордеона</h3>
+              </div>
+              <div class="accordeon-content">
+                <p>С другой стороны дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
+              </div>
+            </div>
+            <div class="accordeon-item">
+              <div class="accordeon-head">
+                <h3>Я третья вкладка аккордеона</h3>
+              </div>
+              <div class="accordeon-content">
+                <p>Разнообразный и богатый опыт новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке новых предложений.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <section id="modal">
+          <h2>Модальное окно</h2>
+          <button class="btn  btn--big js-modal-open">Кнопка вызывающая модальное окно</button>
+        </section>
+
+        <hr>
+
+        <section id="edit">
+          <h2>Текстовый редактор</h2>
+          <div class="row">
+            <div class="col-xs-8">
+              <div class="editor">
+                Нажми на кнопку РЕДАКТИРОВАТЬ, а потом добавь свой текст. Процесс стратегического планирования, как следует из вышесказанного, основан на опыте повседневного применения. Сегмент рынка, как следует из вышесказанного, обуславливает целевой сегмент рынка. Психология восприятия рекламы, конечно, парадоксально концентрирует медиамикс. Разработка медиаплана притягивает институциональный фирменный стиль, признавая определенные рыночные тенденции. Согласно ставшей уже классической работе Филипа Котлера, построение бренда охватывает процесс стратегического планирования.
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <aside class="editor-control active">
+                <button type="button" class="btn close">Редактировать</button>
+                <button type="button" class="btn save">Сохранить</button>
+                <button type="button" class="btn cancel">Отменить</button>
+                <button type="button" class="btn center">Выровнять по центру</button>
+                <button type="button" class="btn left">Выровнять по левому краю</button>
+                <button type="button" class="btn right">Выровнять по правому краю</button>
+                <button type="button" class="btn big">Увеличить шрифт</button>
+                <button type="button" class="btn small">Уменьшить шрифт</button>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <footer class="footer">
+        * отдельное спасибо бредогенераторам за предоставленные тексты :)
+      </footer>
+
+    </div>
+
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-content">
+      <p>Молодец!<p>
+      <button class="btn  btn--big js-modal-close">Закрывай меня</button>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
